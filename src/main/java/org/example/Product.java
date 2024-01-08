@@ -22,4 +22,8 @@ class Product implements Comparable<Product> {
     public int compareTo(Product other) {
         return Double.compare(this.price, other.price);
     }
+
+    public double getPrice() {
+        return price;
+    }
 }
