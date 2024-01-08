@@ -1,4 +1,4 @@
-package org.example;
+package org.xander;
 
 class Product implements Comparable<Product> {
     private Integer id;
@@ -25,5 +25,21 @@ class Product implements Comparable<Product> {
 
     public double getPrice() {
         return price;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setStock(int stock) {
+        this.stock = stock;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getStock() {
+        return stock;
     }
 }

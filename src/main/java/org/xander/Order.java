@@ -1,4 +1,4 @@
-package org.example;
+package org.xander;
 
 import java.util.*;
 
@@ -18,5 +18,13 @@ class Order {
         this.totalPrice = orderDetails.entrySet().stream()
                 .mapToDouble(entry -> entry.getKey().getPrice() * entry.getValue())
                 .sum();
+    }
+
+    public void setOrderDetails(Map<Product, Integer> orderDetails) {
+        this.orderDetails = orderDetails;
+    }
+
+    public Integer getId() {
+        return id;
     }
 }

@@ -1,4 +1,4 @@
-package org.example;
+package org.xander;
 
 import java.util.*;
 
@@ -30,4 +30,14 @@ class User {
     public void modifyCart(Product product, int newQuantity) {
         cart.put(product, newQuantity);
     }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public Map<Product, Integer> getCart() {
+        return cart;
+    }
+
+    
 }
